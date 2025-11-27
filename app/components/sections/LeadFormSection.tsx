@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const BACKEND_URL = "https://sports-travel-landing-api.onrender.com/";
+
 type Inputs = {
   name: string;
   email: string;
@@ -27,7 +29,7 @@ export default function LeadFormSection() {
 
   const onSubmit = async (data: Inputs) => {
     try {
-      const res = await fetch("http://localhost:4000/api/leads", {
+      const res = await fetch(`${BACKEND_URL}api/leads`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
