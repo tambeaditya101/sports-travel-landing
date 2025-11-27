@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const BACKEND_URL = "https://sports-travel-landing-api.onrender.com/";
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL!;
 
 type Inputs = {
   name: string;
