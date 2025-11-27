@@ -14,9 +14,9 @@ The project includes:
 ## 🚀 Live Demo
 
 - **Frontend (Vercel)**
-  https://finternet-app-nu.vercel.app/
+  https://sports-travel-landing-gamma.vercel.app/
 - **Backend (Render)**
-  https://finternet-app-nu.vercel.app/
+  https://sports-travel-landing-api.onrender.com/
 
 ---
 
